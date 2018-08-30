@@ -13,6 +13,13 @@
 		8931A8C82138578400BD2037 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8931A8C62138578400BD2037 /* Main.storyboard */; };
 		8931A8D42138578400BD2037 /* l2qqTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8931A8D32138578400BD2037 /* l2qqTests.swift */; };
 		8931A8DF2138578400BD2037 /* l2qqUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8931A8DE2138578400BD2037 /* l2qqUITests.swift */; };
+		8931A8F32138579F00BD2037 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8931A8F22138579F00BD2037 /* Cocoa.framework */; };
+		8931A8F62138579F00BD2037 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8931A8F52138579F00BD2037 /* SafariExtensionHandler.swift */; };
+		8931A8F82138579F00BD2037 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8931A8F72138579F00BD2037 /* SafariExtensionViewController.swift */; };
+		8931A8FB2138579F00BD2037 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8931A8F92138579F00BD2037 /* SafariExtensionViewController.xib */; };
+		8931A8FE2138579F00BD2037 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 8931A8FD2138579F00BD2037 /* script.js */; };
+		8931A9002138579F00BD2037 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8931A8FF2138579F00BD2037 /* ToolbarItemIcon.pdf */; };
+		8931A9042138579F00BD2037 /* signapp.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8931A8F02138579F00BD2037 /* signapp.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +37,28 @@
 			remoteGlobalIDString = 8931A8BC2138578200BD2037;
 			remoteInfo = l2qq;
 		};
+		8931A9022138579F00BD2037 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8931A8B52138578200BD2037 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8931A8EF2138579F00BD2037;
+			remoteInfo = signapp;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8931A9082138579F00BD2037 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8931A9042138579F00BD2037 /* signapp.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8931A8BD2138578200BD2037 /* l2qq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = l2qq.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +74,15 @@
 		8931A8DA2138578400BD2037 /* l2qqUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = l2qqUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8931A8DE2138578400BD2037 /* l2qqUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = l2qqUITests.swift; sourceTree = "<group>"; };
 		8931A8E02138578400BD2037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8931A8F02138579F00BD2037 /* signapp.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = signapp.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		8931A8F22138579F00BD2037 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		8931A8F52138579F00BD2037 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		8931A8F72138579F00BD2037 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		8931A8FA2138579F00BD2037 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		8931A8FC2138579F00BD2037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8931A8FD2138579F00BD2037 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		8931A8FF2138579F00BD2037 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		8931A9012138579F00BD2037 /* signapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = signapp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +107,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8931A8ED2138579F00BD2037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8931A8F32138579F00BD2037 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -79,6 +124,8 @@
 				8931A8BF2138578200BD2037 /* l2qq */,
 				8931A8D22138578400BD2037 /* l2qqTests */,
 				8931A8DD2138578400BD2037 /* l2qqUITests */,
+				8931A8F42138579F00BD2037 /* signapp */,
+				8931A8F12138579F00BD2037 /* Frameworks */,
 				8931A8BE2138578200BD2037 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -89,6 +136,7 @@
 				8931A8BD2138578200BD2037 /* l2qq.app */,
 				8931A8CF2138578400BD2037 /* l2qqTests.xctest */,
 				8931A8DA2138578400BD2037 /* l2qqUITests.xctest */,
+				8931A8F02138579F00BD2037 /* signapp.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,6 +172,28 @@
 			path = l2qqUITests;
 			sourceTree = "<group>";
 		};
+		8931A8F12138579F00BD2037 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8931A8F22138579F00BD2037 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8931A8F42138579F00BD2037 /* signapp */ = {
+			isa = PBXGroup;
+			children = (
+				8931A8F52138579F00BD2037 /* SafariExtensionHandler.swift */,
+				8931A8F72138579F00BD2037 /* SafariExtensionViewController.swift */,
+				8931A8F92138579F00BD2037 /* SafariExtensionViewController.xib */,
+				8931A8FC2138579F00BD2037 /* Info.plist */,
+				8931A8FD2138579F00BD2037 /* script.js */,
+				8931A8FF2138579F00BD2037 /* ToolbarItemIcon.pdf */,
+				8931A9012138579F00BD2037 /* signapp.entitlements */,
+			);
+			path = signapp;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,10 +204,12 @@
 				8931A8B92138578200BD2037 /* Sources */,
 				8931A8BA2138578200BD2037 /* Frameworks */,
 				8931A8BB2138578200BD2037 /* Resources */,
+				8931A9082138579F00BD2037 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8931A9032138579F00BD2037 /* PBXTargetDependency */,
 			);
 			name = l2qq;
 			productName = l2qq;
@@ -180,6 +252,23 @@
 			productReference = 8931A8DA2138578400BD2037 /* l2qqUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		8931A8EF2138579F00BD2037 /* signapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8931A9052138579F00BD2037 /* Build configuration list for PBXNativeTarget "signapp" */;
+			buildPhases = (
+				8931A8EC2138579F00BD2037 /* Sources */,
+				8931A8ED2138579F00BD2037 /* Frameworks */,
+				8931A8EE2138579F00BD2037 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = signapp;
+			productName = signapp;
+			productReference = 8931A8F02138579F00BD2037 /* signapp.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -201,6 +290,9 @@
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = 8931A8BC2138578200BD2037;
 					};
+					8931A8EF2138579F00BD2037 = {
+						CreatedOnToolsVersion = 10.0;
+					};
 				};
 			};
 			buildConfigurationList = 8931A8B82138578200BD2037 /* Build configuration list for PBXProject "l2qq" */;
@@ -219,6 +311,7 @@
 				8931A8BC2138578200BD2037 /* l2qq */,
 				8931A8CE2138578400BD2037 /* l2qqTests */,
 				8931A8D92138578400BD2037 /* l2qqUITests */,
+				8931A8EF2138579F00BD2037 /* signapp */,
 			);
 		};
 /* End PBXProject section */
@@ -244,6 +337,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8931A8EE2138579F00BD2037 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8931A9002138579F00BD2037 /* ToolbarItemIcon.pdf in Resources */,
+				8931A8FB2138579F00BD2037 /* SafariExtensionViewController.xib in Resources */,
+				8931A8FE2138579F00BD2037 /* script.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +378,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8931A8EC2138579F00BD2037 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8931A8F82138579F00BD2037 /* SafariExtensionViewController.swift in Sources */,
+				8931A8F62138579F00BD2037 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -288,6 +400,11 @@
 			target = 8931A8BC2138578200BD2037 /* l2qq */;
 			targetProxy = 8931A8DB2138578400BD2037 /* PBXContainerItemProxy */;
 		};
+		8931A9032138579F00BD2037 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8931A8EF2138579F00BD2037 /* signapp */;
+			targetProxy = 8931A9022138579F00BD2037 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -297,6 +414,14 @@
 				8931A8C72138578400BD2037 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8931A8F92138579F00BD2037 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8931A8FA2138579F00BD2037 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -420,6 +545,7 @@
 		8931A8E42138578400BD2037 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = l2qq/l2qq.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +565,7 @@
 		8931A8E52138578400BD2037 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = l2qq/l2qq.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -537,6 +664,44 @@
 			};
 			name = Release;
 		};
+		8931A9062138579F00BD2037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = signapp/signapp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UM224Y25DY;
+				INFOPLIST_FILE = signapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = l2.l2qq.signapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		8931A9072138579F00BD2037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = signapp/signapp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UM224Y25DY;
+				INFOPLIST_FILE = signapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = l2.l2qq.signapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -572,6 +737,15 @@
 			buildConfigurations = (
 				8931A8EA2138578400BD2037 /* Debug */,
 				8931A8EB2138578400BD2037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8931A9052138579F00BD2037 /* Build configuration list for PBXNativeTarget "signapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8931A9062138579F00BD2037 /* Debug */,
+				8931A9072138579F00BD2037 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
