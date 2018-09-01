@@ -12,6 +12,8 @@ class secondWindow: SFSafariExtensionViewController {
     
     @IBAction func goButton(_ sender: Any) {
         print("BINGO!!!!!!!!!")
+        // auth button
+        
     }
     
     
@@ -20,7 +22,7 @@ class secondWindow: SFSafariExtensionViewController {
     static let shared: secondWindow = {
         //print("second controller")
         let shared = secondWindow()
-        shared.preferredContentSize = NSSize(width:480, height:272)
+        shared.preferredContentSize = NSSize(width:240, height:180)
         return shared
     }()
     
