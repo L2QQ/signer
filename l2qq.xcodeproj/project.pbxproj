@@ -20,6 +20,8 @@
 		8931A8FE2138579F00BD2037 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 8931A8FD2138579F00BD2037 /* script.js */; };
 		8931A9002138579F00BD2037 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8931A8FF2138579F00BD2037 /* ToolbarItemIcon.pdf */; };
 		8931A9042138579F00BD2037 /* signapp.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8931A8F02138579F00BD2037 /* signapp.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8931A90D213885ED00BD2037 /* secondWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8931A90B213885ED00BD2037 /* secondWindow.swift */; };
+		8931A90E213885ED00BD2037 /* secondWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8931A90C213885ED00BD2037 /* secondWindow.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		8931A8FD2138579F00BD2037 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
 		8931A8FF2138579F00BD2037 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		8931A9012138579F00BD2037 /* signapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = signapp.entitlements; sourceTree = "<group>"; };
+		8931A90B213885ED00BD2037 /* secondWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondWindow.swift; sourceTree = "<group>"; };
+		8931A90C213885ED00BD2037 /* secondWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = secondWindow.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,15 +187,25 @@
 		8931A8F42138579F00BD2037 /* signapp */ = {
 			isa = PBXGroup;
 			children = (
+				8931A90A2138857900BD2037 /* Controllers */,
 				8931A8F52138579F00BD2037 /* SafariExtensionHandler.swift */,
-				8931A8F72138579F00BD2037 /* SafariExtensionViewController.swift */,
-				8931A8F92138579F00BD2037 /* SafariExtensionViewController.xib */,
 				8931A8FC2138579F00BD2037 /* Info.plist */,
 				8931A8FD2138579F00BD2037 /* script.js */,
 				8931A8FF2138579F00BD2037 /* ToolbarItemIcon.pdf */,
 				8931A9012138579F00BD2037 /* signapp.entitlements */,
 			);
 			path = signapp;
+			sourceTree = "<group>";
+		};
+		8931A90A2138857900BD2037 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8931A8F72138579F00BD2037 /* SafariExtensionViewController.swift */,
+				8931A8F92138579F00BD2037 /* SafariExtensionViewController.xib */,
+				8931A90B213885ED00BD2037 /* secondWindow.swift */,
+				8931A90C213885ED00BD2037 /* secondWindow.xib */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8931A9002138579F00BD2037 /* ToolbarItemIcon.pdf in Resources */,
+				8931A90E213885ED00BD2037 /* secondWindow.xib in Resources */,
 				8931A8FB2138579F00BD2037 /* SafariExtensionViewController.xib in Resources */,
 				8931A8FE2138579F00BD2037 /* script.js in Resources */,
 			);
@@ -384,6 +399,7 @@
 			files = (
 				8931A8F82138579F00BD2037 /* SafariExtensionViewController.swift in Sources */,
 				8931A8F62138579F00BD2037 /* SafariExtensionHandler.swift in Sources */,
+				8931A90D213885ED00BD2037 /* secondWindow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -28,7 +28,9 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
     }
     
     override func popoverViewController() -> SFSafariExtensionViewController {
-        return SafariExtensionViewController.shared
+        //return SafariExtensionViewController.shared
+        return secondWindow.shared
+        //return NSStoryboard.init()
     }
 
 }
