@@ -28,7 +28,7 @@
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Z9w-tq-q08">
                                         <rect key="frame" x="18" y="143" width="204" height="17"/>
-                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="L2QQ auth" id="bTy-CP-HQj">
+                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="L2 auth" id="bTy-CP-HQj">
                                             <font key="font" usesAppearanceFont="YES"/>
                                             <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>

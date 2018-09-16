@@ -8,7 +8,11 @@
 
 import SafariServices
 
-class SafariExtensionHandler: SFSafariExtensionHandler {
+class SafariExtensionHandler: SFSafariExtensionHandler, SecondWindowDelegate {
+    
+    func secondWindowDidClick(_ sc: secondWindow, for num: Int) {
+        print("Num is \(num)")
+    }
     
     override func messageReceived(withName messageName: String, from page: SFSafariPage, userInfo: [String : Any]?) {
         // This method will be called when a content script provided by your extension calls safari.extension.dispatchMessage("message").
@@ -21,6 +25,11 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
     override func toolbarItemClicked(in window: SFSafariWindow) {
         // This method will be called when your toolbar item is clicked.
         NSLog("The extension's toolbar item was clicked")
+        /*
+        window.getActiveTab { (tab) in
+            tab?.getActivePage(completionHandler: <#T##(SFSafariPage?) -> Void#>)
+        }
+ */
     }
     
     override func validateToolbarItem(in window: SFSafariWindow, validationHandler: @escaping ((Bool, String) -> Void)) {
@@ -30,6 +39,13 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
     
     override func popoverViewController() -> SFSafariExtensionViewController {
         //return SafariExtensionViewController.shared
+        //secondWindow.shareHandler(self)
+      
+       /* secondWindow.shared.delegate = self
+        secondWindow.shared.goHandler = { (_) in
+            print("Hello")
+        }
+*/
         return secondWindow.shared
         //return NSStoryboard.init()
     }
